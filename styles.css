@@ -1,0 +1,182 @@
+:root {
+  --blue-900: #0f3d75;
+  --blue-700: #1c5fb8;
+  --blue-100: #eaf2ff;
+  --white: #ffffff;
+  --gray-600: #4a5568;
+  --gray-300: #d2dbe8;
+  --success: #1f9d55;
+  --warning: #dd6b20;
+  --danger: #c53030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  color: var(--blue-900);
+  background: linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+}
+
+.app-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-300);
+  padding: 1.2rem 2rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: var(--blue-700);
+}
+
+.app-header p {
+  margin: 0.35rem 0 0;
+  color: var(--gray-600);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(15, 61, 117, 0.06);
+}
+
+.form-panel .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+label {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding: 0.6rem 0.65rem;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #9fc3ff;
+  border-color: var(--blue-700);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.btn {
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  color: var(--blue-900);
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--blue-700);
+  border-color: var(--blue-700);
+  color: var(--white);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 0.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 980px;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--gray-300);
+  padding: 0.6rem;
+  vertical-align: top;
+}
+
+th {
+  background: var(--blue-100);
+}
+
+.status-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: #dbeafe;
+  color: var(--blue-900);
+}
+
+.reminder {
+  font-weight: 600;
+}
+
+.reminder.upcoming {
+  color: var(--warning);
+}
+
+.reminder.overdue {
+  color: var(--danger);
+}
+
+.reminder.ok {
+  color: var(--success);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.empty {
+  color: var(--gray-600);
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: 380px 1fr;
+    align-items: start;
+  }
+}

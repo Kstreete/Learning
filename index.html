@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concierge Medicine Physician Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Physician Concierge Interest Tracker</h1>
+      <p>Manage physician outreach and follow-ups in one dashboard.</p>
+    </header>
+
+    <main class="container">
+      <section class="panel form-panel">
+        <h2 id="formTitle">Add Physician Lead</h2>
+        <form id="leadForm">
+          <input type="hidden" id="leadId" />
+
+          <div class="grid">
+            <label>
+              Physician Name
+              <input type="text" id="name" required />
+            </label>
+
+            <label>
+              Specialty
+              <input type="text" id="specialty" required />
+            </label>
+
+            <label>
+              Contact Info
+              <input type="text" id="contact" placeholder="Email or phone" required />
+            </label>
+
+            <label>
+              Current Status
+              <select id="status" required>
+                <option value="new lead">New Lead</option>
+                <option value="contacted">Contacted</option>
+                <option value="interested">Interested</option>
+                <option value="scheduled call">Scheduled Call</option>
+                <option value="converted">Converted</option>
+              </select>
+            </label>
+
+            <label>
+              Last Contact Date
+              <input type="date" id="lastContact" />
+            </label>
+
+            <label>
+              Next Follow-up Date
+              <input type="date" id="nextFollowUp" />
+            </label>
+          </div>
+
+          <label>
+            Notes
+            <textarea id="notes" rows="3" placeholder="Key context, preferences, concerns..."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary" id="saveBtn">Add Lead</button>
+            <button type="button" class="btn" id="cancelEditBtn" hidden>Cancel Edit</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="table-header">
+          <h2>Dashboard</h2>
+          <label class="filter">
+            Filter by Status
+            <select id="statusFilter">
+              <option value="all">All</option>
+              <option value="new lead">New Lead</option>
+              <option value="contacted">Contacted</option>
+              <option value="interested">Interested</option>
+              <option value="scheduled call">Scheduled Call</option>
+              <option value="converted">Converted</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Physician Name</th>
+                <th>Specialty</th>
+                <th>Contact Info</th>
+                <th>Status</th>
+                <th>Last Contact</th>
+                <th>Next Follow-up</th>
+                <th>Notes</th>
+                <th>Reminder</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="leadTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
