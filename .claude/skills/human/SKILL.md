@@ -29,13 +29,13 @@ What that means for the writing:
 
 These are the habits to reach for. The patterns file covers what to avoid.
 
-- Plain verbs. "Is," "has," "runs," "built," "needs." Not "serves as," "boasts," "stands as."
-- Specifics over importance claims. Instead of saying something is pivotal, say what it did: how many homes, which county, what changed.
-- Varied sentence length. Some short ones. Some that run on a bit because the thought needs room.
+- Plain verbs. "Is," "has," "runs," "built," "wrote," "used." Not "serves as," "boasts," "utilized."
+- Specifics over importance claims. Instead of saying something is pivotal, say what it did: how many homes, which county, what changed. Definite statements are fine when they're true ("was the first," "is the only").
+- Varied rhythm. Some short sentences. Some that run on a bit because the thought needs room. Newer AI writes every sentence at the same medium length with only commas and periods, and that's now a tell too, so use colons, semicolons, parentheses, and the odd question where they fit. No em dashes.
+- Ordinary qualifiers people actually use: very, pretty, a bit, tends to, probably.
 - Lists only when the content really is a list. Two items or four items are fine. Don't force three.
-- Commas, periods, parentheses, and colons instead of em dashes.
 - Contractions where a person would use them (it's, we're, don't), unless the piece is formal academic writing.
-- Straight quotes and apostrophes.
+- Straight quotes and apostrophes, and the same variety of English (American or Australian) all the way through, matching her original.
 - Let the last sentence carry real information. Don't end on a summary or an inspirational line.
 - Name who said or found something. If you can't name them, drop the claim or ask Kirsty.
 
@@ -47,7 +47,7 @@ Before:
 After:
 > AGI Affinity is The Nash Group's AI-readiness practice. We help community organizations and small employers get their teams comfortable with AI tools, and we focus on the groups that usually get left out of that training.
 
-The second version is shorter, makes a concrete claim, and has no em dash, no triplet, no "not just X but Y," and no AI vocabulary.
+The second version is shorter and makes a concrete claim. The dash, the "not just X but Y," the list of three verbs, and the AI vocabulary are all gone.
 
 ## When it's Claude's own writing
 
